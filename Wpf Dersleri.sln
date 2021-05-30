@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf Dersleri", "Wpf Dersleri\Wpf Dersleri.csproj", "{BB32A5F4-224F-4334-86F9-6ED0895676BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{D139AF7C-6A74-474F-B364-88C068D1E283}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB32A5F4-224F-4334-86F9-6ED0895676BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB32A5F4-224F-4334-86F9-6ED0895676BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB32A5F4-224F-4334-86F9-6ED0895676BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB32A5F4-224F-4334-86F9-6ED0895676BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D139AF7C-6A74-474F-B364-88C068D1E283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D139AF7C-6A74-474F-B364-88C068D1E283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D139AF7C-6A74-474F-B364-88C068D1E283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D139AF7C-6A74-474F-B364-88C068D1E283}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC3E85DB-069F-43A4-829F-E6DB6AC2BEF8}
+	EndGlobalSection
+EndGlobal
