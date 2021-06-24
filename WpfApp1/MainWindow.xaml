@@ -15,7 +15,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="220" x:Name="grdClmn_menu"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
@@ -29,7 +29,7 @@
                 <Border>
                     <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                         <Image Source="assets\icons\open_book_30px.png" Height="24" Width="24"/>
-                        <Label Content="Kütüphane Programı" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <Label Content="Kütüphane Programı" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="lbl_logoyazi"/>
                     </DockPanel>
                 </Border>
                 <Border Grid.Row="1">
@@ -43,10 +43,10 @@
                         </Style>
                     </Border.Style>
                     <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Image Source="assets/icons/verified.png">
+                        <Image x:Name="btn_hamburgerMenu" MouseDown="btn_hamburgerMenu_MouseDown">
                             <Image.Style>
                                 <Style TargetType="Image">
-                                    <Setter Property="Source" Value="assets\icons\shopping_cart_48px.png"/>
+                                    <Setter Property="Source" Value="assets/icons/verified.png"/>
                                     <Setter Property="Height" Value="auto" />
                                     <Setter Property="Width" Value="100" />
                                 </Style>
@@ -125,40 +125,40 @@
                     <Button Height="50" Style="{DynamicResource menuButonlar}" x:Name="btn_KitapListesi" Click="btn_KitapListesi_Click">
                         <DockPanel Width="200" Margin="15,0,0,0">
                             <Image Source="assets/icons/book_50px.png" Width="32" />
-                            <Label Content="Kitap Listesi" Foreground="White" FontSize="16"/>
+                            <Label Content="Kitap Listesi" Foreground="White" FontSize="16" x:Name="lbl_menu1"/>
                         </DockPanel>
                     </Button>
                     <Button Height="50" Style="{DynamicResource menuButonlar}">
                         <DockPanel Width="200" Margin="15,0,0,0">
                             <Image Source="assets/icons/staff_48px.png" Width="32" />
-                            <Label Content="Okuyucu Listesi" Foreground="White" FontSize="16"/>
+                            <Label Content="Okuyucu Listesi" Foreground="White" FontSize="16" x:Name="lbl_menu2"/>
                         </DockPanel>
                     </Button>
                     <Button Height="50" Style="{DynamicResource menuButonlar}">
                         <DockPanel Width="200" Margin="15,0,0,0">
                             <Image Source="assets/icons/course_30px.png" Width="32" />
-                            <Label Content="Emanet Listesi" Foreground="White" FontSize="16"/>
+                            <Label Content="Emanet Listesi" Foreground="White" FontSize="16" x:Name="lbl_menu3"/>
                         </DockPanel>
                     </Button>
                     <Button Height="50" Style="{DynamicResource menuButonlar}">
                         <DockPanel Width="200" Margin="15,0,0,0">
                             <Image Source="assets/icons/timesheet_32px.png" Width="32" />
-                            <Label Content="Zamanı Dolanlar" Foreground="White" FontSize="16"/>
+                            <Label Content="Zamanı Dolanlar" Foreground="White" FontSize="16" x:Name="lbl_menu4"/>
                         </DockPanel>
                     </Button>
                     <Button Height="50" Style="{DynamicResource menuButonlar}">
                         <DockPanel Width="200" Margin="15,0,0,0">
                             <Image Source="assets/icons/about_48px.png" Width="32" />
-                            <Label Content="Hakkımda" Foreground="White" FontSize="16"/>
+                            <Label Content="Hakkımda" Foreground="White" FontSize="16" x:Name="lbl_menu5"/>
                         </DockPanel>
                     </Button>
                 </StackPanel>
-                <Border VerticalAlignment="Bottom" Height="122" Grid.RowSpan="2">
+                <Border VerticalAlignment="Bottom" Height="122" Grid.RowSpan="2" x:Name="menu_alt_resim">
                     <Border.Background>
                         <ImageBrush ImageSource="assets/background/background-cizim.png"/>
                     </Border.Background>
                     <Border CornerRadius="10,10,10,10" Cursor="Hand" VerticalAlignment="Bottom" Margin="0,0,0,25" HorizontalAlignment="Center">
-                        <Label Content="1.0.0.0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="version" Margin="0" HorizontalContentAlignment="Center"/>
+                        <Label Content="1.0.0.0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" HorizontalContentAlignment="Center"/>
                         <Border.Style>
                             <Style TargetType="Border">
                                 <Setter Property="Background" Value="#BF0D397C" />

@@ -57,7 +57,6 @@ namespace WpfApp1
         {
             ucLoad.uc_Load(content, new kitapListesi());
             DBConnection.connectionTest();
-            version.Content = DBConnection.connectionState;
         }
 
         private void btn_tamEkran_Click(object sender, RoutedEventArgs e)
@@ -71,6 +70,41 @@ namespace WpfApp1
             {
                 this.WindowState = WindowState.Normal;
                 mainWindow.Margin = new Thickness(15, 15, 15, 15);
+            }
+            
+        }
+
+        private void btn_hamburgerMenu_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if(btn_hamburgerMenu.Width != 60)
+            {
+                GridLength gridLength = new GridLength(70, GridUnitType.Pixel);
+                grdClmn_menu.Width = gridLength;
+
+                lbl_logoyazi.Visibility = Visibility.Hidden;
+                lbl_menu1.Visibility = Visibility.Hidden;
+                lbl_menu2.Visibility = Visibility.Hidden;
+                lbl_menu3.Visibility = Visibility.Hidden;
+                lbl_menu4.Visibility = Visibility.Hidden;
+                lbl_menu5.Visibility = Visibility.Hidden;
+                menu_alt_resim.Visibility = Visibility.Hidden;
+                btn_hamburgerMenu.Width = 60;
+                lbl_logoyazi.Width = 0;
+            }
+            else
+            {
+                GridLength gridLength = new GridLength(220, GridUnitType.Pixel);
+                grdClmn_menu.Width = gridLength;
+
+                lbl_logoyazi.Visibility = Visibility.Visible;
+                lbl_menu1.Visibility = Visibility.Visible;
+                lbl_menu2.Visibility = Visibility.Visible;
+                lbl_menu3.Visibility = Visibility.Visible;
+                lbl_menu4.Visibility = Visibility.Visible;
+                lbl_menu5.Visibility = Visibility.Visible;
+                menu_alt_resim.Visibility = Visibility.Visible;
+                btn_hamburgerMenu.Width = 100;
+                lbl_logoyazi.Width = 150;
             }
             
         }
